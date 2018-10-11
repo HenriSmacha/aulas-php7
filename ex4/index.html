@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Conversor </title>
+    <meta charset="ut-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viweport">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1> Conversor </h1>
+      <form name="kk" id="kk" method="post" action="controle/controle-conversor.php">
+        <div class="container">
+          <input type="text" name="txtreal" placeholder="Valor de Reais" autofocus class="form-control">
+        </div>
+        <div class="container">
+          <input type="text" name="txtdolar" placeholder="Cotasão do Dolar" class="form-control">
+        </div>
+        <div class="container">
+          <input type="text" name="txteuro" placeholder="Cotasão do Euro" class="form-control">
+        </div>
+        <div class="container">
+          <input type="submit" value="Calcular" class="btn btn-primary">
+          <input type="reset" value="Limpar" class="btn btn-warning">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

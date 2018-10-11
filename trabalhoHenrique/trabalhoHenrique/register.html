@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <title>Cadastro de Pessoa</title>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1,maximum-scale=1" name="viewport">
+      <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      <script src="vendor/components/jquery/jquery.min.js"></script>
+      <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Cadastro de Pessoa</h1>
+      <form name="cadalu" id="cadalu" method="POST" action="control/control-register.php">
+
+        <div class="form-group">
+          <input type="text" name="txtnome" placeholder="Digite o nome da pessoa" autofocus class="form-control" pattern="^[a-zA-ZÁ-ù ]{2,30}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtsobrenome" placeholder="Digite o sobrenome da pessoa"  class="form-control" pattern="^[a-zA-ZÁ-ù ]{2,30}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="numd" placeholder="DD"  class="form-control" pattern="^[\d]{2,4}$">
+          <input type="text" name="numm" placeholder="MM"  class="form-control" pattern="^[\d]{2,4}$">
+          <input type="text" name="numa" placeholder="AAAA"  class="form-control" pattern="^[\d]{2,4}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtemail" placeholder="Digite o email"  class="form-control" pattern="^[a-z]{2-15}@?[a-z]{3-6}(.com)$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtsexo" placeholder="Digite seu sexo"  class="form-control" pattern="^(masculino|feminino|m|f)$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtrenda" placeholder="Digite sua renda anual"  class="form-control" pattern="^[0-9]{5-10}(.,)???$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtcpf" placeholder="CPF"  class="form-control" pattern="^[0-9]{11}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtrg" placeholder="RG"  class="form-control" pattern="^[a-zA-Z0-9 -]{9,20}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtendereco" placeholder="Endereço"  class="form-control" pattern="^[a-zA-ZÁ-ù ]{2,30}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtcomp" placeholder="Complemento"  class="form-control" pattern="^[a-zA-ZÁ-ù0-9 ]{2,30}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtbairro" placeholder="Bairro"  class="form-control" pattern="^[a-zA-ZÁ-ù ]{2,30}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtcidade" placeholder="Cidade"  class="form-control" pattern="^[a-zA-ZÁ-ù ]{2,30}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtestado" placeholder="Estado"  class="form-control" pattern="^[a-zA-ZÁ-ù ]{2,30}$">
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="txtcep" placeholder="CEP"  class="form-control" pattern="^[0-9]{5}-?[0-9]{3}$">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Cadastrar" class="btn btn-primary btn-block">
+          <input type="reset" value="Limpar" class="btn btn-warning btn-block">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

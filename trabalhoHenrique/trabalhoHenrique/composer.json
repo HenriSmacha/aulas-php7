@@ -1,0 +1,17 @@
+{
+    "name": "luciferhenri/trabalhao",
+    "description": "Exemplo exercicio aula10",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luciano Henrique",
+            "email": "lehleffa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "twbs/bootstrap": "^3.4@dev",
+        "components/jquery": "dev-master"
+    }
+}
